@@ -1,0 +1,215 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["string","null"]
+        },
+        "created_at": {
+            "type": ["string","null"]
+        },
+        "updated_at": {
+            "type": ["string","null"]
+        },
+        "width": {
+            "type": ["integer","null"]
+        },
+        "height": {
+            "type": ["integer","null"]
+        },
+        "color": {
+            "type": ["string","null"]
+        },
+        "downloads": {
+            "type": ["integer","null"]
+        },
+        "likes": {
+            "type": ["integer","null"]
+        },
+        "liked_by_user": {
+            "type": "boolean"
+        },
+        "description": {
+            "type": ["string","null"]
+        },
+        "exif": {
+            "type": "object",
+            "properties": {
+                "make": {
+                    "type": ["string","null"]
+                },
+                "model": {
+                    "type": ["string","null"]
+                },
+                "exposure_time": {
+                    "type": ["string","null"]
+                },
+                "aperture": {
+                    "type": ["string","null"]
+                },
+                "focal_length": {
+                    "type": ["string","null"]
+                },
+                "iso": {
+                    "type": ["integer","null"]
+                }
+            }
+        },
+        "location": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": ["string","null"]
+                },
+                "city": {
+                    "type": ["string","null"]
+                },
+                "country": {
+                    "type": ["string","null"]
+                },
+                "position": {
+                    "type": "object",
+                    "properties": {
+                        "latitude": {
+                            "type": ["number","null"]
+                        },
+                        "longitude": {
+                            "type": ["number","null"]
+                        }
+                    }
+                }
+            }
+        },
+        "current_user_collections": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": ["integer","null"]
+                    },
+                    "title": {
+                        "type": ["string","null"]
+                    },
+                    "published_at": {
+                        "type": ["string","null"]
+                    },
+                    "last_collected_at": {
+                        "type": ["string","null"]
+                    },
+                    "updated_at": {
+                        "type": ["string","null"]
+                    },
+                    "cover_photo": {},
+                    "user": {}
+                },
+                "required": [
+                    "id",
+                    "title",
+                    "published_at",
+                    "last_collected_at",
+                    "updated_at",
+                    "cover_photo",
+                    "user"
+                ]
+            }
+        },
+        "urls": {
+            "type": "object",
+            "properties": {
+                "raw": {
+                    "type": ["string","null"]
+                },
+                "full": {
+                    "type": ["string","null"]
+                },
+                "regular": {
+                    "type": ["string","null"]
+                },
+                "small": {
+                    "type": ["string","null"]
+                },
+                "thumb": {
+                    "type": ["string","null"]
+                }
+            }
+        },
+        "links": {
+            "type": "object",
+            "properties": {
+                "self": {
+                    "type": ["string","null"]
+                },
+                "html": {
+                    "type": ["string","null"]
+                },
+                "download": {
+                    "type": ["string","null"]
+                },
+                "download_location": {
+                    "type": ["string","null"]
+                }
+            }
+        },
+        "user": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": ["string","null"]
+                },
+                "updated_at": {
+                    "type": ["string","null"]
+                },
+                "username": {
+                    "type": ["string","null"]
+                },
+                "name": {
+                    "type": ["string","null"]
+                },
+                "portfolio_url": {
+                    "type": ["string","null"]
+                },
+                "bio": {
+                    "type": ["string","null"]
+                },
+                "location": {
+                    "type": ["string","null"]
+                },
+                "total_likes": {
+                    "type": ["integer","null"]
+                },
+                "total_photos": {
+                    "type": ["integer","null"]
+                },
+                "total_collections": {
+                    "type": ["integer","null"]
+                },
+                "instagram_username": {
+                    "type": ["string","null"]
+                },
+                "twitter_username": {
+                    "type": ["string","null"]
+                },
+                "links": {
+                    "type": "object",
+                    "properties": {
+                        "self": {
+                            "type": ["string","null"]
+                        },
+                        "html": {
+                            "type": ["string","null"]
+                        },
+                        "photos": {
+                            "type": ["string","null"]
+                        },
+                        "likes": {
+                            "type": ["string","null"]
+                        },
+                        "portfolio": {
+                            "type": ["string","null"]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
