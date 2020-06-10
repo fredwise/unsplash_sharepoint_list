@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "d": {
+            "type": "object",
+            "properties": {
+                "__metadata": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "uri": {
+                            "type": "string"
+                        },
+                        "etag": {
+                            "type": "string"
+                        },
+                        "type": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "ListItemEntityTypeFullName": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
