@@ -1,0 +1,10 @@
+HEADERS
+Content-Type  application/json;odata=verbose
+If-Match      *
+X-HTTP-Method *
+
+BODY
+
+{"__metadata":{"type":"@{body('Parse_JSON_ListItemEntityTypeFullName_Response')?['d']?['ListItemEntityTypeFullName']}"},
+"Picture":{"Url":"@{body('Parse_JSON_Unsplash_Response')?['urls']?['small']}"}
+}
